@@ -37,9 +37,9 @@ import org.springframework.data.domain.PageRequest;
 
 <%_ } _%>
 <%_ if (reactive) { _%>
-import org.springframework.data.elasticsearch.core.ReactiveElasticsearchTemplate;
+import org.springframework.data.elasticsearch.client.erhlc.ReactiveElasticsearchTemplate;
 <%_ } else { _%>
-import org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate;
+import org.springframework.data.elasticsearch.client.erhlc.ElasticsearchRestTemplate;
 <%_ } _%>
 import org.springframework.data.elasticsearch.core.query.NativeSearchQuery;
 import org.springframework.data.elasticsearch.core.query.Query;
